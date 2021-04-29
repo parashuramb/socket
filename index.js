@@ -63,7 +63,7 @@
 const express = require("express");
 const cors = require("cors");
 const http = require('http');
-
+let myport = process.env.PORT || 5000;
 // create express app
 const app = express(); 
 app.use(cors());
@@ -94,8 +94,8 @@ function onConnection(socket) {
     );
 }
 
-app.listen(process.env.PORT || 5000, () => {
-  console.log("Server is listening on port ",  process.env.PORT || 5000);
+app.listen(myport, () => {
+  console.log("Server is listening on port ", myport );
 });
 module.exports = app;
 // module.exports = app;
