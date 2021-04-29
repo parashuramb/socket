@@ -4,7 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+     "ng": "ng",
+    "start": "node index.js",
+    "start-local": "node --max_old_space_size=8192 node_modules/@angular/cli/bin/ng serve",
+    "build-local": "node --max_old_space_size=6000 node_modules/@angular/cli/bin/ng build ",
+    "heroku-postbuild": "ng build ",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e" 1"
   },
   "author": "",
   "license": "ISC",
