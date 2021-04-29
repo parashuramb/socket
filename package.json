@@ -1,18 +1,48 @@
+
 {
-  "name": "server",
+  "name": "someting",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
+    "test": "mocha --timeout 10000",
+    "start-nodemon": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "http": "0.0.1-security",
     "socket.io": "^4.0.1"
+    "@sendgrid/mail": "^7.2.4",
+    "aws-sdk": "^2.751.0",
+    "axios": "^0.19.2",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-device": "^0.4.2",
+    "express-fileupload": "^1.2.0",
+    "fs": "0.0.1-security",
+    "jade": "^1.11.0",
+    "js-yaml": "^3.12.1",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.1.1",
+    "mongoose-increment": "^2.0.0",
+    "morgan": "^1.10.0",
+    "mosca": "^2.8.3",
+    "mqtt": "^4.2.6",
+    "multer": "^1.4.2",
+    "nodemailer": "^5.1.1",
+    "nodemon": "^2.0.4",
+    "sha256": "^0.2.0",
+    "ssh2-sftp-client": "^5.3.1",
+    "twilio": "^3.49.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
   }
 }
+
