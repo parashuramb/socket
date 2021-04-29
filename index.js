@@ -94,5 +94,9 @@ function onConnection(socket) {
     );
 }
 
+app.listen(process.env.PORT || 5000, () => {
+  console.log("Server is listening on port ",  process.env.PORT || 5000);
+});
 
-server.listen(process.env.PORT || 5000, () => console.log(`server is running on port ${ process.env.PORT || 5000}`));
+// module.exports = app;
+// server.listen(process.env.PORT || 5000, () => console.log(`server is running on port ${ process.env.PORT || 5000}`));
